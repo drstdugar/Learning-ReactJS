@@ -1,0 +1,22 @@
+.expense-item-date {
+  gap: 2px;
+  width: 51px;
+  display: flex;
+  border-radius: 4px;
+  flex-direction: column;
+  border: 2px solid rgb(187, 223, 187);
+}
+
+.dates {
+  display: flex;
+  justify-content: center;
+}
+
+.day {
+  font-size: 18px;
+}
+
+.month,
+.year {
+  font-size: 12px;
+}

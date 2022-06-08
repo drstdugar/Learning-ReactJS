@@ -1,6 +1,8 @@
 import "./App.css";
+import "./css/Global.css";
 
-import ExpenseItem from "./components/ExpenseItem/ExpenseItem";
+import Header from "./components/Header/Header";
+import ExpenseItemList from "./components/ExpenseItemsList/ExpenseItemsList";
 
 function App() {
   const expenses = [
@@ -19,8 +21,9 @@ function App() {
   ];
 
   return (
-    <div>
-      <ExpenseItem expense={expenses[0]}></ExpenseItem>
+    <div className="main">
+      <Header headerText="ExpenseTracker" />
+      <ExpenseItemList expenses={expenses} />
     </div>
   );
 }

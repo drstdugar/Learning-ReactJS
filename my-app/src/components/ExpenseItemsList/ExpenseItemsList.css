@@ -1,0 +1,11 @@
+.list-wrapper {
+  margin: 10px;
+  background: white;
+  padding: 10px;
+}
+
+.expense-header {
+  margin: 0;
+  color: rgb(46, 46, 46);
+  padding: var(--padding-20);
+}
