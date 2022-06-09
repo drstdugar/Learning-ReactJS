@@ -1,0 +1,26 @@
+.expense-input {
+  flex: 1;
+  margin: 10px;
+  padding: 10px;
+  background: white;
+}
+
+.input-wrapper {
+  gap: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.inputs {
+  flex: 1;
+  padding: 8px;
+}
+
+.inputs:focus {
+  outline: none;
+}
+
+.add-expense {
+  padding: 8px;
+  margin-top: 20px;
+}

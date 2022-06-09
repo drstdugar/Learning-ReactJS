@@ -1,7 +1,8 @@
 .list-wrapper {
+  flex: 1;
   margin: 10px;
-  background: white;
   padding: 10px;
+  background: white;
 }
 
 .expense-header {
