@@ -9,6 +9,7 @@ function ExpenseInput(props) {
     item: "",
     date: "",
     amount: "",
+    id: Math.random().toString(),
   });
 
   const submitExpenseHandler = (event) => {
@@ -35,6 +36,7 @@ function ExpenseInput(props) {
       <form onSubmit={submitExpenseHandler}>
         <div className="input-wrapper">
           <input
+            required
             type="text"
             className="inputs"
             placeholder="Item"
@@ -44,6 +46,7 @@ function ExpenseInput(props) {
             }
           />
           <input
+            required
             type="number"
             className="inputs"
             placeholder="Amount"
@@ -53,6 +56,7 @@ function ExpenseInput(props) {
             }
           />
           <input
+            required
             type="date"
             className="inputs"
             value={expenseData?.date}

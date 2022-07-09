@@ -8,30 +8,10 @@ import ExpenseInput from "./components/ExpenseInput/ExpenseInput";
 import ExpenseItemList from "./components/ExpenseItemsList/ExpenseItemsList";
 
 function App() {
-  const expenses = [
-    {
-      id: 1,
-      item: "Car",
-      amount: "100",
-      date: new Date("2020-01-01"),
-    },
-    {
-      id: 2,
-      item: "Vase",
-      amount: "70",
-      date: new Date("2022-01-01"),
-    },
-    {
-      id: 3,
-      item: "Phone",
-      amount: "90",
-      date: new Date("2021-01-01"),
-    },
-  ];
+  const [expenses, setExpenses] = useState([]);
 
-  const addExpenseHandler = (expense) => {
-    console.log(expense);
-  };
+  const addExpenseHandler = (expense) =>
+    setExpenses((prevState) => [expense, ...prevState]);
 
   return (
     <div className="main">
